@@ -2,7 +2,6 @@
 session_start();
 require_once __DIR__ . '/../includes/connect.php';
 
-// This PHP block will handle any PHP processing you want to execute before loading the page.
 
 ?>
 
@@ -38,7 +37,6 @@ require_once __DIR__ . '/../includes/connect.php';
                 <li class="nav-item active">
                     <a class="nav-link" href="articles.php">Articles<span class="sr-only">(current)</span></a>
                 </li>
-                <!-- Add more navigation items here -->
             </ul>
         </div>
     </nav>
@@ -58,7 +56,6 @@ require_once __DIR__ . '/../includes/connect.php';
         </div>
     </div>
 
-    <!-- Include Bootstrap JS and its dependencies below -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

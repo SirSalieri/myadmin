@@ -2,7 +2,6 @@
 session_start();
 require_once __DIR__ . '/../includes/connect.php';
 
-// Fetch user activity from the database
 $stmt = $conn->prepare("SELECT * FROM user_activity ORDER BY timestamp DESC");
 $stmt->execute();
 $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -13,7 +12,6 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>User Activity Tracker</title>
-    <!-- Include Bootstrap CSS for styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
@@ -33,7 +31,6 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <li class="nav-item active">
                     <a class="nav-link" href="articles.php">Articles<span class="sr-only">(current)</span></a>
                 </li>
-                <!-- Add more navigation items here -->
             </ul>
         </div>
     </nav>
@@ -61,7 +58,6 @@ $activities = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </table>
     </div>
 
-    <!-- Include Bootstrap JS and its dependencies below -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
